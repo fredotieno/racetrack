@@ -11,4 +11,8 @@ class Race {
 
     static constraints = {
     }
+
+    static mapping = {
+        sort "startDate"
+    }
 }
