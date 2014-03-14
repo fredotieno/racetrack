@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="osiepna" name="racetrack.RaceIntegrationTests" tests="1" time="0.216" timestamp="2014-03-14T08:41:40">
+  <properties />
+  <testcase classname="racetrack.RaceIntegrationTests" name="testRaceDatesBeforeToday" time="0.214" />
+  <system-out><![CDATA[--Output from testRaceDatesBeforeToday--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'racetrack.Race' on field 'startDate': rejected value [Fri Mar 07 11:41:40 EAT 2014]; codes [racetrack.Race.startDate.validator.error.racetrack.Race.startDate,racetrack.Race.startDate.validator.error.startDate,racetrack.Race.startDate.validator.error.java.util.Date,racetrack.Race.startDate.validator.error,race.startDate.validator.error.racetrack.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrack.Race.startDate.validator.invalid.racetrack.Race.startDate,racetrack.Race.startDate.validator.invalid.startDate,racetrack.Race.startDate.validator.invalid.java.util.Date,racetrack.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrack.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrack.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrack.Race,Fri Mar 07 11:41:40 EAT 2014]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+
+BadField:
+Field error in object 'racetrack.Race' on field 'startDate': rejected value [Fri Mar 07 11:41:40 EAT 2014]; codes [racetrack.Race.startDate.validator.error.racetrack.Race.startDate,racetrack.Race.startDate.validator.error.startDate,racetrack.Race.startDate.validator.error.java.util.Date,racetrack.Race.startDate.validator.error,race.startDate.validator.error.racetrack.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrack.Race.startDate.validator.invalid.racetrack.Race.startDate,racetrack.Race.startDate.validator.invalid.startDate,racetrack.Race.startDate.validator.invalid.java.util.Date,racetrack.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrack.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrack.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrack.Race,Fri Mar 07 11:41:40 EAT 2014]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+
+Code:
+race.startDate.validator.invalid
+]]></system-out>
+  <system-err><![CDATA[--Output from testRaceDatesBeforeToday--
+]]></system-err>
+</testsuite>

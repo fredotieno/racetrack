@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="osiepna" id="0" name="RaceIntegrationTests" package="racetrack" tests="1" time="0.216" timestamp="2014-03-14T08:41:40">
+      <properties />
+
+      <testcase classname="racetrack.RaceIntegrationTests" name="testRaceDatesBeforeToday" time="0.214" />
+
+      <system-out><![CDATA[--Output from testRaceDatesBeforeToday--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'racetrack.Race' on field 'startDate': rejected value [Fri Mar 07 11:41:40 EAT 2014]; codes [racetrack.Race.startDate.validator.error.racetrack.Race.startDate,racetrack.Race.startDate.validator.error.startDate,racetrack.Race.startDate.validator.error.java.util.Date,racetrack.Race.startDate.validator.error,race.startDate.validator.error.racetrack.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrack.Race.startDate.validator.invalid.racetrack.Race.startDate,racetrack.Race.startDate.validator.invalid.startDate,racetrack.Race.startDate.validator.invalid.java.util.Date,racetrack.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrack.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrack.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrack.Race,Fri Mar 07 11:41:40 EAT 2014]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+
+BadField:
+Field error in object 'racetrack.Race' on field 'startDate': rejected value [Fri Mar 07 11:41:40 EAT 2014]; codes [racetrack.Race.startDate.validator.error.racetrack.Race.startDate,racetrack.Race.startDate.validator.error.startDate,racetrack.Race.startDate.validator.error.java.util.Date,racetrack.Race.startDate.validator.error,race.startDate.validator.error.racetrack.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrack.Race.startDate.validator.invalid.racetrack.Race.startDate,racetrack.Race.startDate.validator.invalid.startDate,racetrack.Race.startDate.validator.invalid.java.util.Date,racetrack.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrack.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrack.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrack.Race,Fri Mar 07 11:41:40 EAT 2014]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+
+Code:
+race.startDate.validator.invalid
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRaceDatesBeforeToday--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="osiepna" id="1" name="RaceControllerTests" package="racetrack" tests="1" time="0.372" timestamp="2014-03-14T08:41:31">
+      <properties />
+
+      <testcase classname="racetrack.RaceControllerTests" name="testSomething" time="0.271">
+          <failure message="java.lang.AssertionError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: java.lang.AssertionError: Implement me
+	at racetrack.RaceControllerTests.testSomething(RaceControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="osiepna" id="2" name="RaceTests" package="racetrack" tests="1" time="0.156" timestamp="2014-03-14T08:41:31">
+      <properties />
+
+      <testcase classname="racetrack.RaceTests" name="testInMiles" time="0.154" />
+
+      <system-out><![CDATA[--Output from testInMiles--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInMiles--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="osiepna" id="3" name="RegistrationControllerTests" package="racetrack" tests="1" time="1.3" timestamp="2014-03-14T08:41:29">
+      <properties />
+
+      <testcase classname="racetrack.RegistrationControllerTests" name="testSomething" time="1.131">
+          <failure message="java.lang.AssertionError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: java.lang.AssertionError: Implement me
+	at racetrack.RegistrationControllerTests.testSomething(RegistrationControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="osiepna" id="4" name="RegistrationTests" package="racetrack" tests="1" time="0.906" timestamp="2014-03-14T08:41:28">
+      <properties />
+
+      <testcase classname="racetrack.RegistrationTests" name="testSomething" time="0.513">
+          <failure message="java.lang.AssertionError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: java.lang.AssertionError: Implement me
+	at racetrack.RegistrationTests.testSomething(RegistrationTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

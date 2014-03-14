@@ -10,8 +10,8 @@ import org.junit.*
  */
 @TestFor(Race)
 class RaceTests {
-
-    void testSomething() {
-       fail "Implement me"
+    void testInMiles(){
+	def race = new Race(distance:5.0)
+	assertEquals 3.10700, race.inMiles()
     }
 }
