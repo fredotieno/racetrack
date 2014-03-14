@@ -24,4 +24,10 @@ class Race {
     static mappings = {
 	sort "startDate"
     }
+
+    static hasMany = [registrations:Registration]
+
+    String toString(){
+	return "${name}, ${startDate.format('MM/dd/yyyy')}"
+    }
 }
