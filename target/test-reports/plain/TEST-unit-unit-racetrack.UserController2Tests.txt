@@ -1,0 +1,13 @@
+Testsuite: racetrack.UserController2Tests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.637 sec
+------------- Standard Output ---------------
+--Output from testShow--
+--Output from testAuthenticate--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testShow--
+--Output from testAuthenticate--
+------------- ---------------- ---------------
+
+Testcase: testShow took 1.418 sec
+Testcase: testAuthenticate took 0.198 sec

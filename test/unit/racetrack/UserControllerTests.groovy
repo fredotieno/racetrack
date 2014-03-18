@@ -44,9 +44,10 @@ class UserControllerTests {
         response.reset()
 
         populateValidParams(params)
+	def user = new User(login:"jdoe", password:"wordpass", role:"user")
         controller.save()
-
-        assert response.redirectedUrl == '/user/show/1'
+	params.id = user.id
+        assert response.redirectedUrl == '/user/show/$user.id'
         assert controller.flash.message != null
         assert User.count() == 1
     }
@@ -59,7 +60,7 @@ class UserControllerTests {
 
 
         populateValidParams(params)
-        def user = new User(params)
+        def user = new User(login:"jdoe", password:"wordpass", role:"user")
 
         assert user.save() != null
 
@@ -78,7 +79,7 @@ class UserControllerTests {
 
 
         populateValidParams(params)
-        def user = new User(params)
+        def user = new User(login:"jdoe", password:"wordpass", role:"user")
 
         assert user.save() != null
 
@@ -99,7 +100,7 @@ class UserControllerTests {
 
 
         populateValidParams(params)
-        def user = new User(params)
+        def user = new User(login:"jdoe", password:"wordpass", role:"user")
 
         assert user.save() != null
 
@@ -143,7 +144,7 @@ class UserControllerTests {
         response.reset()
 
         populateValidParams(params)
-        def user = new User(params)
+        def user = new User(login:"jdoe", password:"wordpass", role:"user")
 
         assert user.save() != null
         assert User.count() == 1

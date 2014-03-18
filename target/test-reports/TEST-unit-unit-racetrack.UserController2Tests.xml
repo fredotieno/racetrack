@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="osiepna" name="racetrack.UserController2Tests" tests="2" time="1.637" timestamp="2014-03-18T13:58:55">
+  <properties />
+  <testcase classname="racetrack.UserController2Tests" name="testShow" time="1.418" />
+  <testcase classname="racetrack.UserController2Tests" name="testAuthenticate" time="0.198" />
+  <system-out><![CDATA[--Output from testShow--
+--Output from testAuthenticate--
+]]></system-out>
+  <system-err><![CDATA[--Output from testShow--
+--Output from testAuthenticate--
+]]></system-err>
+</testsuite>

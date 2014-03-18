@@ -10,6 +10,17 @@ class User {
 		password(blank:false, password:true)
 		role(inList:["admin", "user"])
 	}
+
+	static transients = ['admin']
+
+	boolean isAdmin(){
+		return role == "admin"
+	}
+
+	def beforeInsert = {
+		password = password.encodeAsSHA()
+	}
+
 	String toString(){
 		login
 	}

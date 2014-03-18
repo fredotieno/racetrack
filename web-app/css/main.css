@@ -613,3 +613,10 @@ a.header-main:link, a.header-main:visited {
 	margin-top: 1em;
 	clear: both;
 }
+#loginHeader {
+	float: right;
+	color: #fff;
+}
+#loginHeader a{
+	color: #fff;
+}

@@ -10,6 +10,41 @@ class UserController {
         redirect(action: "list", params: params)
     }
 
+    def beforeInterceptor = [action:this.&auth, except:['login', 'logout', 'authenticate']]
+    def auth() {
+	if(!session.user) {
+		redirect(controller:"user", action:"login")
+		return false
+	}
+	if(!session.user.admin){
+		flash.message = "Tsk tsk—admins only"
+		redirect(controller:"race", action:"list")
+		return false
+	}
+    }
+
+    def login() {
+	render(view:"login")
+    }
+
+    def logout() {
+	flash.message = "Goodbye ${session.user.login}"
+	session.user = null
+	redirect(action:"login")
+    }
+
+    def authenticate() {
+	def user = User.findByLoginAndPassword(params.login, params.password.encodeAsSHA())
+	if(user){
+		session.user = user
+		flash.message = "Hello ${user.login}!"
+		redirect(controller:"race", action:"list")
+	}else{
+		flash.message =	"Sorry, ${params.login}. Please try again."
+		redirect(action:"login")
+	}
+    }
+
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [userInstanceList: User.list(params), userInstanceTotal: User.count()]
